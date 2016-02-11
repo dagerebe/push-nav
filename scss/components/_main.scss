@@ -33,9 +33,16 @@ header {
   position: relative;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 .bg {
   background-image: url(../img/billboard.jpg);
   height: 25em;
+  background-repeat: no-repeat;
+  background-size: cover;
   &[data-state="slide-open"]{
       background-image: none;
   }
@@ -69,7 +76,6 @@ header {
     width: 50%;
     float: left;
     margin-top: .5em;
-    left: 0;
   }
   li {
     list-style-type: none;
